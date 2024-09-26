@@ -1,0 +1,2489 @@
+/*************************** Navbar.css **********************************************/
+.navbar {
+  font-family: Arial, sans-serif;
+  position: relative;
+  z-index: 1000;
+  background-color: none;
+}
+
+.navbar-scrolled {
+  font-family: Arial, sans-serif;
+  position: fixed;
+  z-index: 1000;
+  color: white;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.fiil-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 99%;
+}
+
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1c5d99;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.navbar-menu a {
+  cursor: pointer;
+  color: white !important;
+  text-decoration: none;
+  background-color: none;
+  font-size: 16px;
+}
+
+.navbar-menu a:hover {
+  color: #1c5d99;
+}
+
+.navbar-scrolled .navbar-menu a {
+  background-color: #ffffff;
+  color: black !important;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-buttons .btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: 1px solid #1c5d99;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-buttons .btn-demo {
+  background-color: #144d76;
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+.navbar-buttons .btn-demo:hover {
+  background-color: rgba(28, 93, 153, 0.9);
+  border: 2px solid #1c5d99;
+  color: #ffffff;
+}
+
+.navbar-buttons .btn-contact {
+  background-color: transparent;
+  color: #1c5d99;
+  transition: background-color 0.5s ease;
+}
+
+.navbar-buttons .btn-contact:hover {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-menu.notScrolled {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(28, 93, 153, 0.7);
+    backdrop-filter: blur(20px); /* Efek blur pada background */
+    -webkit-backdrop-filter: blur(10px); /* Dukungan untuk browser Webkit */
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+  }
+
+  .navbar-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar-logo img {
+    height: 22.5px;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar-buttons {
+    display: none;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+.dropdown-menu-product {
+  position: absolute;
+  top: calc(100% + 0px); /* Mengatur posisi dropdown tepat di bawah link produk navbar*/
+  width: 300px; /* Atur lebar dropdown sesuai kebutuhan */
+  height: auto;
+  border: 1px solid #ccc; /* Garis tepi dropdown */
+  background-color: rgba(28, 93, 153, 0.7);
+  border-radius: 5px;
+  border-top: none; /* Menghapus garis atas dropdown */
+  z-index: 999; /* Mengatur z-index agar dropdown muncul di atas konten lain */
+}
+
+.dropdown-menu-product-hamburgerMenu {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  height: auto;
+}
+
+.dropdown-menu-product-hamburgerMenu a{
+  width: 100%;
+}
+
+.dropdown-menu-product li {
+  width: 100%;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-menu-product a {
+  color: #333333; /* Warna teks */
+  text-decoration: none; /* Menghapus dekorasi tautan */
+  display: block; /* Membuat tautan menjadi blok untuk mengisi lebar */
+}
+
+/* .dropdown-menu-product a:hover {
+  background-color: #f0f0f0; Warna latar belakang saat tautan dihover 
+} */
+
+/****************************************************************************************/
+
+/************************** main page - section one **********************************/
+.container-sectionOne {
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 50px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  margin: auto 0;
+  align-items: center;
+}
+
+.Background-Image-main-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -1; /* Untuk memastikan gambar berada di bawah konten lain */
+}
+
+.content-sectionOne {
+  position: relative;
+  margin-right: 1rem;
+  margin: auto;
+  padding-top: 2.5rem;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+.content-sectionOne h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.content-sectionOne p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.buttons-sectionOne {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  gap: 20px;
+}
+
+.contact-button {
+  background-color: rgba(28, 93, 153, 0.8);
+  color: #ffffff;
+  padding: 12px 30px;
+  border: 2px solid #1c5d99;
+  cursor: pointer;
+  border-radius: 7.5px;
+  width: 290px;
+  transition: background-color 0.7s ease; /* Transisi untuk hover */
+}
+
+.contact-button:hover {
+  background-color: #1c5d99; /* Biru dengan 60% opacity pada hover */
+}
+
+.learn-more-button {
+  width: 290px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 12px 25px;
+  border-radius: 7.5px;
+  background-color: transparent;
+  transition: background-color 0.7s ease; /* Transisi untuk hover */
+}
+
+.learn-more-button:hover {
+  background-color: #4CAF50;
+}
+
+.image-container img {
+  max-width: auto;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Vertically centers the child elements */
+  justify-content: center; /* Horizontally centers the child elements */
+  border-radius: 40px;
+}
+
+
+@media (max-width: 1400px) {
+  .container-sectionOne {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-sectionOne {
+    width: 95%;
+  }
+
+  .image-container img {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container-sectionOne {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-sectionOne {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  } 
+
+  .content-sectionOne {
+    margin: auto;
+    width: 100%;
+  }
+   
+  .buttons-sectionOne {
+    display: flex;
+    justify-content: center;
+  } 
+
+  .image-container {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .image-container img{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .content-sectionOne {
+    position: absolute;
+    left: 0;
+    padding-top: 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .content-sectionOne h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-button {
+    width: 250px;
+    padding: 12px 10px;
+  }
+
+  .learn-more-button {
+    width: 250px;
+    padding: 12px 10px;
+    background-color: rgba(76, 175, 80, 0.8);
+    border: 2px solid #4CAF50;
+  }
+
+  .learn-more-button:hover {
+    background-color: rgba(76, 175, 80, 0.8);
+    border: 2px solid #4CAF50;
+  }
+
+  .buttons-sectionOne {
+    font-size: 0.7rem;
+  }
+
+  .whatsapp-icon {
+    height: 70px;
+    width: 70px;
+  }
+  
+}
+
+
+/******************************* mainpage - section two **************************************/
+.container-sectionTwo {
+  width: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 2rem 0;
+}
+
+.container1-sectionTwo {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 2.5rem;
+}
+
+.container1-sectionTwo h2 {
+  color: black;
+}
+
+.container1-sectionTwo p {
+  font-size: 1.2rem;
+  color: #666666;
+}
+
+.sectionTwo-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.sectionTwo-card {
+  padding: 20px;
+  flex: 1;
+  max-width: 360px;
+  padding: 10px 15px;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTwo-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sectionTwo-card-desc {
+  width: 80%;
+  text-align: center;
+  margin: 0 0;
+}
+
+.sectionTwo-card-desc h2 {
+  font-size: 1.5rem;
+  color: #033f47;
+  margin-top: 20px;
+}
+
+.sectionTwo-card-desc p {
+  font-size: 1rem;
+  color: #666666;
+  margin-top: 10px;
+}
+
+.container2-sectionTwo {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  background-color:white;
+  padding-bottom: 2rem;
+}
+
+.container2-fill-sectionTwo {
+  text-align: center;
+}
+
+.sectionTwo-contact-button {
+  background-color: #1c5d99;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.carousel {
+  width: 600px;
+  overflow: hidden;
+  margin: 20px 0;
+  background-color: #cccccc7a;
+  border-radius: 10px;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.carousel-inner img {
+  width: 80px; /* Set the width to 20px */
+  height: 80px; /* Set the height to 20px */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  flex: 0 0 auto;
+  margin: 5px 15px; /* Optional: Add spacing between images */
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .container1-sectionTwo {
+    width: 95%;
+  }
+
+  .sectionTwo-fill-card {
+    width: 100%;
+    background-color: #f0f4f7;
+    border-radius: 8px;
+  }
+
+  .sectionTwo-cards {
+    display: block;
+    width: 100%;
+  }
+
+  .sectionTwo-card {
+    margin: auto;
+    width: 100%;
+    margin-top: 1.5rem;
+    background-color: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-sectionTwo {
+    margin: 0 0;
+    margin-top: -5rem;
+  }
+
+  .container1-sectionTwo {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .sectionTwo-fill-card {
+    padding: 0 10px;
+  }
+
+  .container2-sectionTwo {
+    padding: 0 10px;
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+/************************* main page - section three **********************************/
+.container-sectionThree {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.container-fill-sectionThree {
+  width: 80%;
+  margin: 6rem auto;
+  text-align: center;
+}
+
+.container-fill-sectionThree h2{
+  color: black;
+}
+
+.card-container-sectionThree {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card-sectionThree {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-number-sectionThree {
+  text-align: left;
+}
+
+.card-icon-sectionThree img {
+  max-width: 60%;
+  max-height: 300px; 
+}
+
+.card-content-sectionThree {
+  margin-top: 20px;
+}
+
+.card-content-sectionThree ol{
+  padding-left: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .card-container-sectionThree {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-fill-sectionThree {
+    width: 100%;
+  }
+
+  .card-sectionThree {
+      width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-fill-sectionThree{
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .card-sectionThree {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}
+
+
+/********************** main page - section Four **************************************/
+.container-sectionFour {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+
+.container-main-sectionFour {
+  margin: 5rem 0;
+}
+
+.container-judul-sectionFour {
+  margin: auto;
+  text-align: center;
+}
+
+.container-fill-sectionFour {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  width: 100%;
+  margin: auto;
+}
+
+.text-content-sectionFour {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-content-sectionFour p {
+  margin-top: 2rem;
+}
+
+.image-content-sectionFour {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image-content-sectionFour img {
+  max-width: 75%;
+  border-radius: 8px;
+  margin-top: 2.5rem;
+}
+
+.report-list-sectionFour {
+  list-style: none;
+  padding: 0;
+}
+
+.report-list-sectionFour li {
+  background-color: #f5f5f5;
+  margin: 10px 0;
+  padding: 0 15px;
+  border-radius: 8px;
+  max-height: 400px;
+}
+
+.buttons-sectionFour {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.buttons-sectionFour button {
+  background-color: #1c5d99;
+  border-radius: 7.5px;
+}
+
+@media (max-width: 1000px) {
+  .container-fill-sectionFour {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .report-list-sectionFour li {
+    padding: 2.5px 5px;
+  }
+
+  
+  .container-main-sectionFour {
+    width: 100%;
+  }
+
+  .text-content-sectionFour {
+    width: 100%;
+  }
+
+  .image-content-sectionFour {
+      margin-top: 20px;
+      width: 100%;
+  }
+
+  .image-content-sectionFour img {
+    width: 100%;
+    max-height: auto;
+  }
+}
+
+/*****************************************************************************************************/
+
+/******************************** footer ***************************************************/
+footer {
+  background-color: #1c5d99;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.footer {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-section {
+  flex-grow: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.footer-section h4 {
+  margin-bottom: 2rem;
+  font-size: 16px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 15px;
+}
+
+.footer-section ul li a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section address {
+  font-style: normal;
+}
+
+.social-media-footer span{
+  margin-right: 5px;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ffffff33;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 12.5px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    width: 100%;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-section {
+      margin: 20px 0;
+  }
+
+  .footer-section h4 {
+    margin-bottom: 15px;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 7.5px;
+  }
+
+
+  .footer-bottom {
+      text-align: center;
+  }
+}
+
+/***********************************************************************************************/
+
+/****************************** kenapa delegasi - sectionOne ***********************************/
+/* Container styles */
+.container-sectionOne-KD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50vh;
+  background-color: #f0f4f7; /* Light background color */
+  padding: 20px;
+  padding-top: 8rem;
+}
+
+/* Responsive text styles */
+.responsive-text-sectionOne-KD {
+  width: 75%;
+  font-family: Arial, sans-serif;
+  font-size: 3rem; /* Base font size */
+  color: #1c5d99; /* Dark teal color */
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  .responsive-text-sectionOne-KD {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .responsive-text-sectionOne-KD {
+      font-size: 3rem;
+      width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .responsive-text-sectionOne-KD {
+      font-size: 1.5rem;
+      width: 100%;
+  }
+}
+
+
+
+/************************** kenapa delegasi - section Two *********************************/
+.container-sectionTwoKD {
+  font-family: Arial, sans-serif;
+  margin: 10px auto;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.table-container-sectionTwoKD {
+  width: 75%;
+  margin: 20px;
+  overflow-x: auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: auto;
+}
+
+.table-container-sectionTwoKD table {
+  width: 100%;
+}
+
+.head-table-sectionTwoKD {
+  background-color: #1c5d99;
+  border: 2px solid #1c5d99
+}
+
+.head-table-sectionTwoKD th {
+  border: 1px solid white;
+}
+
+.table-container-sectionTwoKD caption {
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: #4CAF50;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.table-container-sectionTwoKD thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.table-container-sectionTwoKD th, td {
+  padding: 20px 12px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.table-container-sectionTwoKD td.red {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #1c5d99;
+}
+
+.table-container-sectionTwoKD td.orange {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #1c5d99;
+}
+
+.table-container-sectionTwoKD td.green {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #1c5d99;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.icon-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.desc-table-sectionTwoKD {
+  background-color:  #f0f4f7;
+  border: 1px solid #1c5d99;
+}
+
+@media (max-width: 960px) {
+  .table-container-sectionTwoKD {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px)  {
+  .table-container-sectionTwoKD {
+    width: 95%;
+  }
+}
+
+
+/******************** kenapa delegasi - sectionThree ************************************/
+.container-sectionThreeKD{
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.container-head-sectionThreeKD {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+
+.container-head-sectionThreeKD h1 {
+  font-size: 2rem;
+  color: #1c5d99;
+  margin-bottom: 2rem;
+}
+
+.container-head-sectionThreeKD h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.table-head-sectionThreeKD p {
+  font-size: 0.9em;
+  color: #00695c;
+  margin-bottom: 20px;
+}
+
+.table-container-sectionThreeKD {
+  width: 75%;
+  overflow-x: auto;
+  border-radius: 8px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+
+.table-container-sectionThreeKD table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-container-sectionThreeKD thead {
+  background-color: #1c5d99;
+  color: white;
+  border: 2px solid #1c5d99;
+}
+
+.table-container-sectionThreeKD th, td {
+  text-align: center;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.head-table-sectionThreeKD th{
+  padding: 12px;
+}
+
+.body-table-sectionThreeKD td{
+  padding: 1.5rem 1.5rem;
+  border: 1px solid #1c5d99;
+}
+
+.body-table-sectionThreeKD td p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+.table-container-sectionThreeKD td.highlight {
+  color: #1c5d99;
+}
+
+@media (max-width: 960px) {
+  .container-head-sectionThreeKD {
+    width: 90%;
+    top: 0;
+  }
+
+  .table-container-sectionThreeKD {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-head-sectionThreeKD {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .container-head-sectionThreeKD h1{
+    font-size: 1.5rem;
+  }
+
+  .container-head-sectionThreeKD h2{
+    font-size: 1.3rem;
+  }
+}
+
+/*************************** kenapa delegasi - section Four ******************************************/
+.container-sectionFourKD {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-bottom: 10vh;
+  background-color:  white;
+  width: 100%;
+}
+
+.info-section-sectionFourKD {
+  text-align: center;
+  align-items: center;
+  color: black;
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px;
+}
+
+.info-text-sectionFourKD {
+  flex: 1;
+  padding: 20px;
+  width: 50%;
+}
+
+.info-text-sectionFourKD h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.btn-sectionFourKD {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #1c5d99;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-sectionFourKD:hover {
+  background-color: #1f6fba;
+}
+
+.info-image-sectionFourKD {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.info-image-sectionFourKD img {
+  max-width: 550px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1400px) {
+  .container-sectionFourKD {
+    min-height: 50vh;
+  }
+  .info-section-sectionFourKD {
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
+  }
+
+  .info-image-sectionFourKD img {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .info-section-sectionFourKD {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .info-section-sectionFourKD {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 10vh;
+    width: 100%;
+  }
+
+  .info-text-sectionFourKD {
+    width: 100%;
+  }
+  
+  .info-section-sectionFourKD {
+    width: 100%;
+    margin: 5rem 0;
+  }
+  .info-image-sectionFourKD {
+    margin-top: 2rem;
+    min-width: 300px;
+  }
+
+  .info-image-sectionFourKD img {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 700px) {
+  .info-section-sectionFourKD {
+    margin-top: -2.5rem;
+  }
+  .info-text-sectionFourKD h2{
+    font-size: 1.8rem;
+  }
+}
+
+
+
+/******************************* page harga - section Two *********************************************/
+.container-sectionTwoHarga{
+  font-family: Arial, sans-serif;
+  width: 100%;
+  background-color: white;
+}
+
+.container-fill-sectionTwoHarga {
+  width: 75%;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.container-head-sectionTwoHarga {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container-head-sectionTwoHarga  h2{
+  font-size: 2.5rem;
+}
+
+.container-head-sectionTwoHarga button {
+  color: white;
+  background-color: #1c5d99;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.hemat {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.container-body-sectionTwoHarga {
+  display: block;
+}
+
+.box-harga-hemat {
+  position: absolute;
+  color: white;
+  font-family: Arial, sans-serif;
+  background-color: #4CAF50;
+  padding: 10px 30px; /* Menambahkan padding agar teks tidak terlalu rapat */
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.box-harga-left {
+  position: relative;
+  width: 48%;
+  margin: auto;
+  background-color: #f0f4f7;
+  border: 2px solid #1c5d99;
+  border-radius: 5px;
+  padding: 3rem 1.5rem;
+}
+
+.box-harga-right {
+  width: 48%;
+  background-color: #f0f4f7;
+  border:  2px solid #1c5d99;
+  border-radius: 5px;
+  padding: 3rem 1.5rem;
+}
+
+.box-harga-body {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.box-harga-body span{
+  margin-right: 5px;
+}
+
+@media (max-width: 1400px) {
+  .container-fill-sectionTwoHarga {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-fill-sectionTwoHarga{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-fill-sectionTwoHarga {
+    width: 100%;
+  }
+  .container-body-sectionTwoHarga {
+    display: block;
+  }
+  .box-harga-left,
+  .box-harga-right {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .container-body-sectionTwoHarga {
+    display: block;
+    padding: 0 10px;
+  }
+
+  .box-harga-left,
+  .box-harga-right {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .container-head-sectionTwoHarga h2{
+    font-size: 1.75rem;
+  }
+}
+
+
+/*********************** page harga - section Threee  ***************************************/
+.container-sectionThreeHarga {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f7;
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.container-sectionThreeHarga img {
+  width: 130px;
+}
+
+.container-head-sectionThreeHarga {
+  text-align: center;
+}
+
+
+.container-head-sectionThreeHarga-fillHead h2 {
+  margin-bottom: 1rem;
+}
+
+.container-head-sectionThreeHarga-fillHead p{
+  font-size:  1.2rem;
+}
+
+.container-head-sectionThreeHarga-fillend {
+  margin-top: 5rem;
+}
+
+.Badan-Hukum-pt-cv {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.Badan-Hukum-pt-cv p {
+  font-size: 1.2rem;
+}
+
+.fill-Badan-Hukum-pt-cv {
+  margin: 0 2rem;
+}
+
+.fill-Badan-Hukum-pt-cv h2 {
+  margin: 2rem 0;
+}
+
+.fill-Badan-Hukum-pt-cv p {
+  font-size: 1.2rem;
+}
+
+.container-body-sectionThreeHarga {
+  text-align: center;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.container-body-sectionThreeHarga-fill-body {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-right: 4rem;
+}
+
+.box-pribadi-atau-perorangan {
+  margin: 0 5rem;
+}
+
+.box-pribadi-atau-perorangan h2 {
+  margin: 2rem 0;
+}
+
+@media (max-width: 1000px) {
+  .container-head-sectionThreeHarga-fillend {
+    margin-top: 5rem;
+  }
+
+  .Badan-Hukum-pt-cv {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .fill-Badan-Hukum-pt-cv {
+    margin-bottom: 2rem;
+  }
+
+  .fill-Badan-Hukum-pt-cv h2 {
+    margin: 1rem 0;
+  }
+  
+  .container-body-sectionThreeHarga {
+    margin-top: 5rem;
+  }
+
+  .container-body-sectionThreeHarga-fill-body {
+    display: block;
+    text-align: center;
+    padding-right: 0;
+    padding-top: 2rem;
+  }
+
+  #box-pribadi-atau-perorangan {
+    margin-bottom: 2rem;
+  }
+
+  .box-pribadi-atau-perorangan h2 {
+    margin: 1rem 0;
+  }
+
+}
+
+
+/************************** page harga - section Four ******************************************/
+.container-sectionFourHarga {
+  width: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container-fill-sectionFourHarga {
+  width: 75%;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem auto;
+}
+
+.container-fill-sectionFourHarga-left h2{
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.container-fill-sectionFourHarga-left {
+  width: 50%;
+  margin: auto;
+}
+
+.container-fill-sectionFourHarga-right {
+  width: 50%;
+}
+
+.container-fill-sectionFourHarga-right img{
+  max-width: 550px;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 1300px) {
+  .container-fill-sectionFourHarga {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .container-fill-sectionFourHarga-right img{
+    max-width: 520px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container-fill-sectionFourHarga {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .container-fill-sectionFourHarga-right img{
+    max-width: 510px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-fill-sectionFourHarga {  
+    display: block;
+    /* margin: 5rem auto; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-fill-sectionFourHarga-left {
+    width: 100%;
+  }
+
+  .container-fill-sectionFourHarga-right {
+    margin: auto;
+    min-width: 360px;
+    margin-top: 4rem;
+  }
+  
+  .container-fill-sectionFourHarga-right img{
+    max-width: 75%;
+    height: auto;
+  }
+
+  .container-fill-sectionFourHarga-left h2{
+    font-size: 2rem;
+  }
+}
+
+
+
+
+/************************** page Kontak - sectionOneContact **************************************/
+.container-sectionOneContact {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f7;
+  width: 100%;
+}
+
+.container-fill-sectionOneContact {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 5.4rem;
+}
+
+.contact-sectionOneContact {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-sectionOneContact span {
+  margin-right: 10px;
+}
+
+.contact-sectionOneContact-left {
+  margin-right: 4rem;
+}
+
+@media (max-width: 1000px) {
+  .container-fill-sectionOneContact{
+    width: 100%;
+  }
+
+  .contact-sectionOneContact-left {
+    margin-right: 2rem;
+  }
+}
+
+
+/************************* kontak kami - sectionTwooContact ******************************************/
+.container-sectionTwooContact {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  width: 100%;
+}
+
+.container-fill-sectionTwooContact {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.media-sosial-sectionTwooContact {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-left: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.media-sosial-sectionTwooContact {
+  margin-right: 3rem;
+}
+
+.media-sosial-sectionTwooContact span {
+  margin-right: 5px;
+}
+
+@media (max-width: 800px) {
+  .media-sosial-sectionTwooContact {
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+/********************* page tentang kami - SectionOneAboutOur ***************************************/
+.container-SectionOneAboutOur {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f7;
+  width: 100%;
+}
+
+.container-fill-sectionOneAboutOur {
+  margin: auto;
+  width: 75%;
+  text-align: start;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+
+
+/******************************** page tentang kami - sectionTwooAboutOur ************************************/
+.container-sectionTwooAboutOur {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  background-color: white;
+}
+
+.container-fill-sectionTwooAboutOur {
+  margin: 5rem auto;
+  width: 75%;
+  text-align: end;
+}
+
+
+@media (max-width: 1400px) {
+  .container-fill-sectionOneAboutOur, 
+  .container-fill-sectionTwooAboutOur {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-fill-sectionOneAboutOur,
+  .container-fill-sectionTwooAboutOur {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-fill-sectionOneAboutOur,
+  .container-fill-sectionTwooAboutOur {
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-fill-sectionOneAboutOur {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .container-fill-sectionTwooAboutOur {
+    width: 100%;
+    margin: 3rem 0;
+    padding: 0 10px;
+  }
+}
+
+
+/******************************** laporan keuangan - sectionOneLK ********************************************/
+.container-sectionOneLK {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: rgb(9, 76, 79);
+  color: white;
+}
+
+.container-fill-sectionOneLK {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding-top: 9rem;
+  padding-bottom: 4.5rem;
+}
+
+.container-fill-sectionOneLK h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 1100px) {
+  .container-fill-sectionOneLK {
+    width: 90%;
+  }
+
+  .container-fill-sectionOneLK h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+/*************************** page laporan keuangan - sectionTwooLK *************************************/
+.container-sectionTwooLK {
+  font-family: Arial, sans-serif; 
+  width: 100%;
+  background-color: white;
+}
+
+.container-fill-sectionTwooLK {
+  margin: auto;
+  width: 75%;
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
+}
+
+.container-box-sectionTwooLK {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f4f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.header-sectionTwooLK {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1c5d99;
+}
+
+.content-sectionTwooLK {
+  width: 70%;
+  margin: auto 2rem;
+  font-size: 16px;
+  color: #333;
+}
+
+.content-sectionTwooLK p {
+  font-size: 1.2rem;
+  margin-right: 3rem;
+}
+
+.content-img-sectionTwooLK {
+  width: 30%;
+}
+
+.content-img-sectionTwooLK img{
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.content-sectionTwooLK a:hover {
+  text-decoration: underline;
+}
+
+.buttons-open-img-sectionTwoLK {
+  text-align: center;
+  font-size: 14px;
+}
+
+.buttons-open-img-sectionTwoLK a{
+  color: #1c5d99;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.buttons-open-img-sectionTwoLK span {
+  margin-right: 5px;
+}
+
+.container-fill-sectionTwooLK-3 {
+  display: block;
+  padding: 20px;
+  width: 100%;
+}
+
+.contant-of-sectionEnd-LK {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-sectionEndFill {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.container-box-sectionEndFill {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f0f4f7;
+  border-radius: 8px;
+  width: 45%;
+  padding: 20px 50px;
+}
+
+@media (max-width: 1000px) {
+  .container-fill-sectionTwooLK {
+    width: 90%;
+  }
+
+  .contant-of-sectionEnd-LK {
+    display: block;
+  }
+
+  .container-box-sectionEndFill {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f4f7;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px 20px;
+    margin-bottom: 25px;
+  }
+
+  .container-box-sectionTwooLK {
+    display: block;
+  }
+
+  .content-sectionTwooLK {
+    width: 100%;
+  }
+
+  .content-img-sectionTwooLK {
+    margin: auto;
+    margin-top: 15px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 760px) {
+  .content-sectionTwooLK {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .content-img-sectionTwooLK {
+    width: 100%;
+  }
+}
+
+
+/******************************************* memperbesar gambar ***********************************************************/
+.overlay {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-main-overlay {
+  width: 100%;
+  display: block;
+}
+
+.overlay-content {
+  width: 100%;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 55%;
+  max-height: auto;
+}
+
+.slider img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  bottom: 10rem;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px auto;
+  bottom: 0;
+  margin: 5px;
+  width: 100%;
+}
+
+.thumbnails img {
+  max-width: 80px;
+  max-height: auto;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.active-thumbnail {
+  z-index: -2;
+  opacity: 0.5;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  transition: 0.3s;
+}
+
+.close {
+  position: absolute;
+  z-index: 2;
+  font-weight: normal;
+}
+
+.overlay .close:hover,
+.overlay .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff;
+  font-size: 40px;
+  transition: 0.3s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: transparent;
+  border: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* @media (max-width: 1400px) {
+  .overlay-content {
+    max-width: 60%;
+    max-height: 60%;
+    width: auto;
+    height: auto;
+  }
+} */
+
+/* @media (max-width: 1200px) {
+  .overlay-content {
+    max-width: 75%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+  }
+} */
+
+@media (max-width: 1400px) {
+  .slider {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .overlay-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .slider {
+    max-width: 90%;
+    height: auto;
+  } 
+
+  .slider img{
+    max-width: 100%;
+    height: 100%;
+  } 
+}
+
+@media (max-width: 800px) {
+  .overlay-content {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .slider {
+    max-width: 100%;
+    height: auto;
+  } 
+}
+
+
+/*************************** Layanan Pajak - sectionOneLP ***************************************/
+.container-sectionOneLP {
+  width: 100%;
+  background-color: rgb(9, 76, 79);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.container-fill-sectionOneLP {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  padding-top: 7.5rem;
+  padding-bottom: 5rem;
+}
+
+.container-title-sectionOneLP {
+  margin: auto;
+  margin-right: 2rem;
+}
+
+.container-title-sectionOneLP h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.container-title-sectionOneLP p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.container-title-sectionOneLP button{
+  border: none;
+  background-color: #1c5d99;
+  color: white;
+  border-radius: 10px;
+  padding: 17.5px 22.5px;
+}
+
+.container-image-sectionOneLP img {
+  max-width: 550px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1400px) {
+  .container-fill-sectionOneLP {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .container-fill-sectionOneLP {
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-title-sectionOneLP{
+    text-align: center;
+  }
+
+  .container-title-sectionOneLP p{
+    margin: 2rem 0;
+  }
+
+  .container-image-sectionOneLP {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .container-title-sectionOneLP h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-image-sectionOneLP{
+    min-width: 300px;
+  }
+
+  .container-image-sectionOneLP img{
+    max-width: 75%;
+  }
+
+  .container-title-sectionOneLP {
+    width: 100%;
+  }
+
+  .container-title-sectionOneLP h2 {
+    font-size: 1.75rem;
+  }
+}
+
+
+/********************************** layanan pajak - sectionTwooLP ***************************************/
+.conatiner-sectionTwooLp {
+  width: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container-fill-sectionTwooLP {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.container-head-sectionTwooLP {
+  text-align: center;
+}
+
+.container-head-sectionTwooLP h2{
+  font-size: 2.2rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.container-body-sectionTwooLP {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.box-sectionTwooLP {
+  width: 30%;
+}
+
+.box-sectionTwooLP h4{
+  margin: 1rem 0;
+}
+
+@media (max-width: 1400px) {
+  .container-fill-sectionTwooLP {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-fill-sectionTwooLP {
+    width: 98%;
+  }
+
+  .container-body-sectionTwooLP {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .box-sectionTwooLP {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-fill-sectionTwooLP {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+
+/******************************* layanan pajak - sectionThreeLP *******************************/
+.container-sectionThreeLP {
+  width: 100%;
+  background-color: #f0f4f7;
+  font-family: Arial, sans-serif;
+}
+
+.container-fill-sectionThreeLP {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.container-fill-sectionThreeLP h2 {
+  margin-bottom: 2rem;
+}
+
+.container-body-sectionThreeLP {
+  display: block;
+  justify-content: center;
+  text-align: start;
+}
+
+.container-box-sectionThreeLP {
+  display: flex;
+  margin: 2px auto;
+  justify-content: start;
+  padding: 15px 30px;
+  background-color: white;
+  border-radius: 15px;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.container-box-sectionThreeLP img {
+  width: 65px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.container-box-sectionThreeLP h5{
+  margin: auto 0;
+}
+
+/******************** layanan pejak - sectionFourLP ************************************************/
+.container-sectionFourLP {
+  width: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container-fill-sectionFourLP {
+  width: 75%;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.container-box-sectionFourLP {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.fill-box-sectionFourLP {
+  width: 100%;
+}
+
+.fill-box-sectionFourLP img {
+  width: 120px;
+  height: auto;
+}
+
+.fill-box-sectionFourLP h5{
+  margin: 1.5rem 0;
+}
+
+
+
+/****************** layanan pajak - sectionFiveLP ********************************************/
+.container-sectionFiveLP {
+  width: 100%;
+  background-color: #f0f4f7;
+  font-family: Arial, sans-serif;
+}
+
+.container-fill-sectionFiveLP {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  padding: 5rem 0;
+}
+
+.container-box-sectionFiveLP {
+  border: 1px solid #1c5d99;
+  border-radius: 10px;
+  padding: 4rem 4rem 1rem 4rem;
+  margin-top: 2rem;
+}
+
+.container-box-sectionFiveLP img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1400px) {
+  .container-fill-sectionThreeLP{
+    width: 90%;
+  }
+
+  .container-box-sectionThreeLP {
+    width: 70%;
+  }
+
+  .container-fill-sectionFourLP {
+    width: 85%;
+  }
+
+  .container-fill-sectionFiveLP {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container-fill-sectionThreeLP{
+    width: 95%;
+  }
+
+  .container-box-sectionThreeLP {
+    width: 95%;
+    padding: 12px 20px;
+  }
+
+  .container-box-sectionThreeLP img{
+    margin-right: 15px;
+  }
+  
+  .container-box-sectionThreeLP h5 {
+    font-size: 15px;
+  }
+
+  .container-fill-sectionFourLP {
+    width: 90%;
+  }
+
+  .container-fill-sectionFiveLP {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-fill-sectionThreeLP {
+    width: 100%;
+  }
+
+  .container-box-sectionThreeLP {
+    padding: 12px 10px;
+  }
+
+  .container-fill-sectionFourLP {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .container-fill-sectionFiveLP {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-box-sectionFourLP {
+    display: block;
+  }
+  
+  .fill-box-sectionFourLP {
+    margin-bottom: 2rem;
+  }
+
+  .fill-box-sectionFourLP h5{
+    margin: 0.5rem 0;
+  }
+
+}
