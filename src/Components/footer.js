@@ -20,8 +20,8 @@ function Footer() {
                     <div className="footer-section">
                         <h4 style={{ fontWeight: 'bold'}}>Bantuan Pengguna</h4>
                         <ul>
-                            <li><a onClick={() => handleNavigate("/Zofi/whyZofi")}>Kenapa Zona Finance?</a></li>
-                            <li><a onClick={() => handleNavigate("/Zofi/kontak")}>Kontak</a></li>
+                            <li><a onClick={() => handleNavigate("/why")}>Kenapa Zona Finance?</a></li>
+                            <li><a onClick={() => handleNavigate("/kontak")}>Kontak</a></li>
                             <li><a onClick={OpenWhatshapp}>Hubungi Kami</a></li>
                             {/* <li><a onClick={() => handleNavigate("/Haggie.Acc/kontak")}>Blog</a></li> */}
                         </ul>

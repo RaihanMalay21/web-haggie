@@ -71,11 +71,11 @@ const Navbar = ({ sectionTwoRef }) => {
             <nav className={isScrolled ? 'navbar-scrolled' : 'navbar'}>
                 <div className="fiil-navbar">
                     <div className="navbar-logo">
-                        <a style={{ color: "#1c5d99", fontSize: "2rem", width: "100%"}} onClick={() => HandleNavigate('/Zofi')}>{ isScrolled ? <img src={require("../images/Logo_ZF_2.png")}/> : <img src={require("../images/main-logo-zofi.png")}/>}</a>
+                        <a style={{ color: "#1c5d99", fontSize: "2rem", width: "100%"}} onClick={() => HandleNavigate('/')}>{ isScrolled ? <img src={require("../images/Logo_ZF_2.png")}/> : <img src={require("../images/main-logo-zofi.png")}/>}</a>
                     </div>
                     <div className={ isScrolled ? `navbar-menu ${isMenuOpen ? 'open' : ''}` : `navbar-menu ${isMenuOpen ? 'notScrolled': ''}`}>
                         <ul>
-                            <li><a onClick={() => HandleNavigate('/Zofi/whyZofi')}>Kenapa Zofi?</a></li>
+                            <li><a onClick={() => HandleNavigate('/why')}>Kenapa Zofi?</a></li>
                             <li>
                                 <a onClick={menuProduct}>Produk
                                     <svg className='arrow' style={{ alignItems: 'center', paddingBottom: '2px'}} width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,16 +84,16 @@ const Navbar = ({ sectionTwoRef }) => {
                                 </a>
                                 { isMenuProduct && (
                                 <div className={ isMenuOpen ? 'dropdown-menu-product-hamburgerMenu' :'dropdown-menu-product'} style={ isScrolled ? {backgroundColor: 'white'}: {}}>    
-                                    <li><a onClick={() => HandleNavigate('/Zofi/produk/laporan/keuangan')}>Laporan Keuangaan</a></li>
-                                    <li><a onClick={() => HandleNavigate('/Zofi/produk/layanan/pajak')}>Layanan Pajak</a></li>
-                                    <li><a onClick={() => HandleNavigate('/Zofi/produk/layanan/audit')}>Layanan Audit</a></li>
+                                    <li><a onClick={() => HandleNavigate('/produk/laporan/keuangan')}>Laporan Keuangaan</a></li>
+                                    <li><a onClick={() => HandleNavigate('/produk/layanan/pajak')}>Layanan Pajak</a></li>
+                                    <li><a onClick={() => HandleNavigate('/produk/layanan/audit')}>Layanan Audit</a></li>
                                 </div>
                                 )}
                             </li>
-                            <li><a onClick={() => HandleNavigate('/Zofi/harga')}>Harga</a></li>
+                            <li><a onClick={() => HandleNavigate('/harga')}>Harga</a></li>
                             {/* <li><a>Blog</a></li> */}
-                            <li><a onClick={() => HandleNavigate('/Zofi/tentang/kami')}>Tentang Kami</a></li>
-                            <li><a onClick={() => HandleNavigate('/Zofi/kontak')}>Kontak</a></li>
+                            <li><a onClick={() => HandleNavigate('/tentang/kami')}>Tentang Kami</a></li>
+                            <li><a onClick={() => HandleNavigate('/kontak')}>Kontak</a></li>
                         </ul>
                     </div>
                     <div className="navbar-buttons">

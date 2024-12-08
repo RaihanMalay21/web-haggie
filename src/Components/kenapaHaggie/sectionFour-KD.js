@@ -5,7 +5,7 @@ function SectionFourKD() {
     const navigate = useNavigate();
 
     const handleforwardLP = () => {
-        navigate("/Zofi/produk/laporan/keuangan")
+        navigate("/produk/laporan/keuangan")
     }
     return(
         <div className="container-sectionFourKD">

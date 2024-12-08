@@ -5,7 +5,7 @@ function SectionFour() {
     const navigate =  useNavigate();
 
     const handleForwordLP = () => {
-        navigate("/Zofi/produk/laporan/keuangan")
+        navigate("/produk/laporan/keuangan")
     }
 
     return(

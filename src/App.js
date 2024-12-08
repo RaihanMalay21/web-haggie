@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import Main from "./Components/mainPage";
 import WhyDelegation from "./Components/kenapaHaggie";
 import Harga from "./Components/Harga";
@@ -17,14 +17,14 @@ function App() {
         <ScrollToTop/>
         <div>
             <Routes>
-              <Route path='/Zofi' element={<Main/>}/>
-                <Route path='/Zofi/whyZofi' element={<WhyDelegation/>}/>
-                <Route path='/Zofi/harga' element={<Harga/>}/>
-                <Route path='/Zofi/kontak' element={<Kontak/>}/>
-                <Route path='/Zofi/tentang/kami' element={<AboutOur/>}/>
-                <Route path='/Zofi/produk/laporan/keuangan' element={<LaporanKeuangan/>}/>
-                <Route path='/Zofi/produk/layanan/pajak' element={<LayananPajak/>}/>
-                <Route path='/Zofi/produk/layanan/audit' element={<PageLayananAudit/>} />
+                <Route path='/' element={<Main/>}/>
+                <Route path='/why' element={<WhyDelegation/>}/>
+                <Route path='/harga' element={<Harga/>}/>
+                <Route path='/kontak' element={<Kontak/>}/>
+                <Route path='/tentang/kami' element={<AboutOur/>}/>
+                <Route path='/produk/laporan/keuangan' element={<LaporanKeuangan/>}/>
+                <Route path='/produk/layanan/pajak' element={<LayananPajak/>}/>
+                <Route path='/produk/layanan/audit' element={<PageLayananAudit/>} />
             </Routes>
             <DefaultWhatshapp/>
         </div>
