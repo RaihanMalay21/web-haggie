@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RaihanMalay21.github.io/web-haggie/static/css/main.374b374b.css",
-    "main.js": "/RaihanMalay21.github.io/web-haggie/static/js/main.bd8d51bd.js",
+    "main.js": "/RaihanMalay21.github.io/web-haggie/static/js/main.9533121d.js",
     "static/js/453.7f9f1f5b.chunk.js": "/RaihanMalay21.github.io/web-haggie/static/js/453.7f9f1f5b.chunk.js",
     "static/media/main-bg.jpg": "/RaihanMalay21.github.io/web-haggie/static/media/main-bg.3d2ff78f517c784e52d5.jpg",
     "static/media/main-2.png": "/RaihanMalay21.github.io/web-haggie/static/media/main-2.443805682cf7fecf3264.png",
@@ -38,11 +38,11 @@
     "static/media/pphtahunan.png": "/RaihanMalay21.github.io/web-haggie/static/media/pphtahunan.2c2029af5c68d328eb19.png",
     "index.html": "/RaihanMalay21.github.io/web-haggie/index.html",
     "main.374b374b.css.map": "/RaihanMalay21.github.io/web-haggie/static/css/main.374b374b.css.map",
-    "main.bd8d51bd.js.map": "/RaihanMalay21.github.io/web-haggie/static/js/main.bd8d51bd.js.map",
+    "main.9533121d.js.map": "/RaihanMalay21.github.io/web-haggie/static/js/main.9533121d.js.map",
     "453.7f9f1f5b.chunk.js.map": "/RaihanMalay21.github.io/web-haggie/static/js/453.7f9f1f5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.374b374b.css",
-    "static/js/main.bd8d51bd.js"
+    "static/js/main.9533121d.js"
   ]
 }
