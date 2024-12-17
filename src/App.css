@@ -36,6 +36,7 @@
 
 .navbar-logo img {
   height: 40px;
+  margin-bottom: 8px;
 }
 
 .navbar-menu {
@@ -936,6 +937,13 @@ footer {
   padding: 20px;
   font-family: Arial, sans-serif;
   font-size: 16px;
+}
+
+.footer-section img {
+  z-index: 1000px;
+  box-shadow: 0 0px 10px #f4f4f4;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .footer {
