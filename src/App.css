@@ -1,7 +1,7 @@
 /*************************** Navbar.css **********************************************/
 .navbar {
   font-family: Arial, sans-serif;
-  position: relative;
+  position: fixed;
   z-index: 1000;
   background-color: none;
 }
@@ -252,11 +252,12 @@
   color: white;
   padding: 50px;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding-top: 8rem;
-  padding-bottom: 6rem;
+  /* padding-bottom: 6rem;  */
   margin: auto 0;
   align-items: center;
+  margin-bottom: -3.9rem;
 }
 
 .Background-Image-main-page {
@@ -270,7 +271,7 @@
 }
 
 .content-sectionOne {
-  /* position: relative; */
+  position: relative;
   /* margin-right: 1rem; */
   margin: auto;
   padding-top: 1rem;
