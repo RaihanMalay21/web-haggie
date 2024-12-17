@@ -7,13 +7,13 @@ const SectionTwo = React.forwardRef((_, ref) => {
     return(
             <div ref={ref} className="container-sectionTwo">
                 <div class="container1-sectionTwo">
-                    <h2>Keuntungan Menggunakan Layanan ZOFI?</h2>
+                    <h2>Keuntungan Menggunakan Layanan Finfast?</h2>
                     <div class="sectionTwo-cards">
                         <div className="sectionTwo-fill-card">
                             <div class="sectionTwo-card">
                                 <img src={require("../../images/main-2.png")} alt="Keuangannya masih fluktuatif"/>
                                 <div class="sectionTwo-card-desc">
-                                    <h2>Menghemat Waktu dan Biaya</h2>
+                                    <h3>Menghemat Waktu dan Biaya</h3>
                                     <p>Mempekerjakan seorang akuntan dapat menghabiskan banyak waktu dan biaya, terutama jika tidak tersedia anggaran yang cukup untuk merekrutnya. Kami hadir untuk memberikan solusi akuntansi yang efisien dan terjangkau untuk mendukung keberhasilan bisnis Anda.</p>
                                 </div>
                             </div>
@@ -22,7 +22,7 @@ const SectionTwo = React.forwardRef((_, ref) => {
                             <div class="sectionTwo-card">
                                 <img src={require("../../images/main-3.png")} alt="Perlu laporan akurat"/>
                                 <div class="sectionTwo-card-desc">
-                                    <h2>Efisiensi Operasional</h2>
+                                    <h3>Efisiensi Operasional</h3>
                                     <p>Dengan mengelola tugas-tugas keuangan dan akuntansi, perusahaan dapat meningkatkan efisiensi operasional dan fokus pada inti bisnis mereka tanpa terganggu oleh kompleksitas administrasi keuangan.</p>
                                 </div>
                             </div>
@@ -31,7 +31,7 @@ const SectionTwo = React.forwardRef((_, ref) => {
                             <div class="sectionTwo-card">
                                 <img src={require("../../images/main-4.png")} alt="Belum ada budget untuk hire Akuntan"/>
                                 <div class="sectionTwo-card-desc">
-                                    <h2>Analisis dan Laporan Keuangan</h2>
+                                    <h3>Analisis dan Laporan Keuangan</h3>
                                     <p>Kami menyediakan analisis mendalam tentang kinerja keuangan perusahaan, memberikan wawasan yang penting untuk evaluasi strategis dan pengambilan keputusan.</p>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ const SectionTwo = React.forwardRef((_, ref) => {
 
                 <div className="container2-sectionTwo">
                     <div className="conatiner2-fill-sectionTwo">
-                        <h3>Dipercaya oleh 100+ pebisnis UMKM</h3>
+                        <h2>Dipercaya oleh 100+ pebisnis skala kecil dan menengah.</h2>
                         {/* <div class="carousel">
                             <div class="carousel-inner">
                                 <img src={require("../../images/umkm1.jpg")} alt="Nongkrong Coffee"/>

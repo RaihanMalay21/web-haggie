@@ -4,7 +4,7 @@ function SectionThreeKD() {
     return(
         <div className="container-sectionThreeKD">
             <div className="container-head-sectionThreeKD">
-                <h1>ZOFI solusi yang paling cocok untuk bisnis skala kecil-menengah yang mengalami fluktuasi keuangan atau masih dalam fase kerugian</h1>
+                <h1>Finfast solusi yang paling cocok untuk bisnis skala kecil-menengah yang mengalami fluktuasi keuangan atau masih dalam fase kerugian</h1>
                 <h2>Solusi laporan keuangan yang paling sesuai dengan segmen bisnis yang bersangkutan:</h2>
                 <p>*Layar smartphone geser tabel untuk lihat perbandingan</p>
             </div>
@@ -29,7 +29,7 @@ function SectionThreeKD() {
                                 <p> Diperlukan informasi keuangan yang terperinci dan akurat untuk mengidentifikasi kebocoran</p>
                             </td>
                             <td><p>Pembukuan sendiri</p></td>
-                            <td class="highlight"><p>ZOFI</p></td>
+                            <td class="highlight"><p>Finfast</p></td>
                             <td><p>Akuntan Internal</p></td>
                         </tr>
                         <tr>

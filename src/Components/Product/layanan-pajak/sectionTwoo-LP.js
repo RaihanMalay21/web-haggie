@@ -5,8 +5,8 @@ function SectionTwooLP() {
         <div className="conatiner-sectionTwooLp">
             <div className="container-fill-sectionTwooLP">
                 <div className="container-head-sectionTwooLP">
-                    <h2>Layanan Pajak ZOFI untuk UMKM</h2>
-                    <p>Konsultasikan Kebutuhanmu, ZOFI siap bantu</p>
+                    <h2>Layanan Pajak Finfast untuk UMKM</h2>
+                    <p>Konsultasikan Kebutuhanmu, Finfast siap bantu</p>
                 </div>
                 <div className="container-body-sectionTwooLP">
                     <div className="box-sectionTwooLP">

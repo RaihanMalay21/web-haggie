@@ -6,7 +6,7 @@ function SectionThree() {
     return (
         <div className="container-sectionThree">
             <div class="container-fill-sectionThree">
-                <h2>Cara kerja ZOFI</h2>
+                <h2>Cara kerja Finfast</h2>
                 <p>Dapatkan laporan keuangan yang akurat hanya dengan 3 langkah sederhana!</p>
                 <div class="card-container-sectionThree">
                     <div class="card-sectionThree">

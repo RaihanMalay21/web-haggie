@@ -48,7 +48,7 @@ const Navbar = ({ sectionTwoRef }) => {
         };
 
         
-        if (location.pathname === "/Zofi") {
+        if (location.pathname === "/") {
             window.addEventListener('scroll', handleScroll);
         }
         
@@ -59,7 +59,7 @@ const Navbar = ({ sectionTwoRef }) => {
 
     useEffect(() => {
         const currentLocation = location.pathname;
-        if (currentLocation !== ("/Zofi" || "/zofi")) {
+        if (currentLocation !== ("/" || "/")) {
           setIsScrolled(true);
         } else {
           setIsScrolled(false);
@@ -75,7 +75,7 @@ const Navbar = ({ sectionTwoRef }) => {
                     </div>
                     <div className={ isScrolled ? `navbar-menu ${isMenuOpen ? 'open' : ''}` : `navbar-menu ${isMenuOpen ? 'notScrolled': ''}`}>
                         <ul>
-                            <li><a onClick={() => HandleNavigate('/why')}>Kenapa Zofi?</a></li>
+                            <li><a onClick={() => HandleNavigate('/why')}>Kenapa Finfast?</a></li>
                             <li>
                                 <a onClick={menuProduct}>Produk
                                     <svg className='arrow' style={{ alignItems: 'center', paddingBottom: '2px'}} width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -11,8 +11,10 @@ function SectionFourKD() {
         <div className="container-sectionFourKD">
             <div class="info-section-sectionFourKD">
                 <div class="info-text-sectionFourKD" style={{width: '100%'}}>
-                    <h2>Apa saja jenis laporan yang di berikan oleh ZOFI?</h2>
-                    <a class="btn-sectionFourKD" onClick={handleforwardLP}>PELAJARI LEBIH LANJUT</a>
+                    <h2>Apa saja jenis laporan yang di berikan oleh Finfast?</h2>
+                    <div className="buttons-sectionFour">
+                        <button class="btn-sectionFourKD" onClick={handleforwardLP}>PELAJARI LEBIH LANJUT</button>
+                    </div>
                 </div>
                 <div class="info-image-sectionFourKD" style={{width: '0'}}>
                 </div>

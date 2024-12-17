@@ -18,10 +18,10 @@ function SectionOne({ sectionTwoRef }) {
                 <img src={require("../../images/main-bg.jpg")} className="Background-Image-main-page"/>
                 <div class="content-sectionOne">
                     <h1>Seperti memiliki akuntan pribadi yang menyusun laporan keuangan Anda, namun dengan biaya yang lebih rendah.</h1>
-                    <p>ZOFI (Zona Finance) adalah Layanan jasa akuntansi yang menawarkan solusi akuntansi yang disesuaikan dengan kebutuhan bisnis Anda, sehingga Anda dapat meningkatkan efisiensi operasional.</p>
+                    <p>Finfast adalah Layanan jasa akuntansi yang menawarkan solusi akuntansi yang disesuaikan dengan kebutuhan bisnis Anda, sehingga Anda dapat meningkatkan efisiensi operasional.</p>
                     <div class="buttons-sectionOne">
-                        <button class="contact-button" onClick={ OpenWhatshapp }>HUBUNGI KAMI</button>
-                        <button class="learn-more-button" onClick={ handleLearnMoreClick }>PELAJARI LEBIH LANJUT</button>
+                        <button class="contact-button" onClick={ OpenWhatshapp }>Hubungi Kami</button>
+                        <button class="learn-more-button" onClick={ handleLearnMoreClick }>Pelajari Lebih Lanjut</button>
                     </div>
                 </div>
             </div>

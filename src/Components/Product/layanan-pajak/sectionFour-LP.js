@@ -4,7 +4,7 @@ function SectionFourLP() {
     return(
         <div className="container-sectionFourLP">
             <div className="container-fill-sectionFourLP">
-                <h2>Kenapa Harus ZOFI?</h2>
+                <h2>Kenapa Harus Finfast?</h2>
                 <div className="container-box-sectionFourLP">
                     <div className="fill-box-sectionFourLP">
                         <img src={require("../../../images/LP-7.png")} />
@@ -14,7 +14,7 @@ function SectionFourLP() {
                     <div className="fill-box-sectionFourLP">
                         <img src={require("../../../images/LP-8.png")} />
                         <h5>Lebih Efesien</h5>
-                        <p>Tidak perlu koordinasi dua layanan terpisah karena ZOFI yang akan handle pembukuan dan pajakmu</p>
+                        <p>Tidak perlu koordinasi dua layanan terpisah karena Finfast yang akan handle pembukuan dan pajakmu</p>
                     </div>
                 </div>
                 <div className="container-box-sectionFourLP" style={{ marginTop: '2rem'}}>

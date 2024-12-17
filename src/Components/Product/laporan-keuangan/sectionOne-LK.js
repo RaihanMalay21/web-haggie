@@ -5,7 +5,7 @@ const SectionOneLK = forwardRef((_, ref) => {
     return(
         <div ref={ref} className="container-sectionOneLK" >
             <div className="container-fill-sectionOneLK">
-                <h1>Apa saja yang tercakup dalam laporan keuangan yang disediakan oleh ZOFI?</h1>
+                <h1>Apa saja yang tercakup dalam laporan keuangan yang disediakan oleh Finfast?</h1>
             </div>
         </div>
     )

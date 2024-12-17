@@ -5,7 +5,7 @@ function SectionTwoKD() {
         <div class="container-sectionTwoKD">
             <div style={{ margin: "5rem 0"}}>
                 <div className="container-sectionTwoKD-head">
-                    <h2>Perbandingan ZOFI dengan solusi laporan keuangan lainnya</h2>
+                    <h2>Perbandingan Finfast dengan solusi laporan keuangan lainnya</h2>
                     <p style={{ margin: "1.5rem 0"}}>*Layar smartphone geser tabel untuk lihat perbandingan</p>
                 </div>
                 <div class="table-container-sectionTwoKD">
@@ -93,7 +93,7 @@ function SectionTwoKD() {
                                 </td>
                             </tr>
                             <tr>
-                                <td className="desc-table-sectionTwoKD">ZOFI</td>
+                                <td className="desc-table-sectionTwoKD">Finfast</td>
                                 <td class="green">
                                     <div className="icon-text">
                                         <p>Laporan detail dan akurat</p>
