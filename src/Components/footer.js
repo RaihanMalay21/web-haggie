@@ -14,7 +14,7 @@ function Footer() {
             <div className="footer">
                 <div className="footer-container">
                     <div className="footer-section logo-section">
-                        <img src={require('../images/Logo FF 2.png')} alt="Haggie Logo" className="logo" style={{ marginBottom: '2rem'}} />
+                        <img src={require('../images/Logo FF 2.1.png')} alt="Haggie Logo" className="logo" style={{ marginBottom: '2rem'}} />
                         {/* <p style={{ fontSize: '16px'}}>Pusing bikin laporan keuangan bisnis? Zona Finance aja!</p> */}
                     </div>
                     <div className="footer-section">

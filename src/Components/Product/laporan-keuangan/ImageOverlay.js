@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import '../../../App.css';
-import LK1 from "../../../images/3_LabaRugi_001.png";
-import LK2 from "../../../images/4_LabaRugi Detail_001.png";
-import LK3 from "../../../images/5. Laba Rugi Bulanan_001.png";
-import LK4 from "../../../images/1_Neraca_001.png";
-import LK5 from "../../../images/2_Neraca Detail_001.png";
+import LK1 from "../../../images/1_Neraca_001.png";
+import LK2 from "../../../images/2_Neraca Detail_001.png";
+import LK3 from "../../../images/3_LabaRugi_001.png";
+import LK4 from "../../../images/4_LabaRugi Detail_001.png";
+import LK5 from "../../../images/5. Laba Rugi Bulanan_001.png";
 import LK6 from "../../../images/6. Arus Kas_001.png"
 import AB1 from "../../../images/7. Analisa Bagi Hasil_001.png";
 import AB2 from "../../../images/8. Analisa Target Penjualan_001.png";
@@ -42,7 +42,7 @@ function ImageOverlay({ src, initialIndex, onClose }) {
   };
 
   return (
-    <div className="overlay">
+    <div className="overlay" style={{zIndex: "9999"}}>
       <span className="close" onClick={onClose}>&times;</span>
       <div className="container-main-overlay">
         <div className="overlay-content">

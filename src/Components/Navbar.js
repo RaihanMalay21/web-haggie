@@ -71,7 +71,7 @@ const Navbar = ({ sectionTwoRef }) => {
             <nav className={isScrolled ? 'navbar-scrolled' : 'navbar'}>
                 <div className="fiil-navbar">
                     <div className="navbar-logo">
-                        <a style={{ color: "#1c5d99", fontSize: "2rem", width: "100%"}} onClick={() => HandleNavigate('/')}><img src={require("../images/Logo FF 3.png")}/></a>
+                        <a className={isScrolled? '' : 'logo'} style={{ color: "#1c5d99", fontSize: "2rem", width: "100%"}} onClick={() => HandleNavigate('/')}><img src={require("../images/Logo FF 3.png")}/></a>
                     </div>
                     <div className={ isScrolled ? `navbar-menu ${isMenuOpen ? 'open' : ''}` : `navbar-menu ${isMenuOpen ? 'notScrolled': ''}`}>
                         <ul>

@@ -40,7 +40,7 @@ function SectionTwooLK() {
                             <p>Kekayaan dan stabilitas keuangan bisnis Anda melalui laporan yang merinci dengan jelas aset, kewajiban, dan nilai bersih perusahaan.</p>
                         </div>
                         <div className="content-img-sectionTwooLK">
-                            <a target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(3, 3)}}>
+                            <a target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(0, 0)}}>
                                 <img src={require("../../../images/1_Neraca_001.png")} alt="Highlight Laporan Keuangan"/>
                                 <div className="buttons-open-img-sectionTwoLK">
                                     <a>
@@ -61,7 +61,7 @@ function SectionTwooLK() {
                             <p>Kekayaan dan stabilitas keuangan bisnis Anda melalui laporan yang merinci dengan jelas aset, kewajiban, dan nilai bersih perusahaan.</p>
                         </div>
                         <div className="content-img-sectionTwooLK">
-                            <a target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(4, 4)}}>
+                            <a target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(1, 1)}}>
                                 <img src={require("../../../images/2_Neraca Detail_001.png")} alt="Highlight Laporan Keuangan"/>
                                 <div className="buttons-open-img-sectionTwoLK">
                                     <a>
@@ -82,7 +82,7 @@ function SectionTwooLK() {
                             <p>Kinerja keuangan bisnis Anda dengan detail pendapatan, biaya, dan laba bersih dalam satu tampilan yang ringkas.</p>
                         </div>
                         <div className="content-img-sectionTwooLK">
-                            <a href="path_to_image" target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(0, 0)}}>
+                            <a href="path_to_image" target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(2, 2)}}>
                                 <img src={require("../../../images/3_LabaRugi_001.png")} alt="Highlight Laporan Keuangan"/>
                                 <div className="buttons-open-img-sectionTwoLK">
                                     <a>
@@ -103,7 +103,7 @@ function SectionTwooLK() {
                             <p>Kinerja keuangan bisnis Anda dengan detail pendapatan, biaya, dan laba bersih dalam satu tampilan yang ringkas.</p>
                         </div>
                         <div className="content-img-sectionTwooLK">
-                            <a href="path_to_image" target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(1, 1)}}>
+                            <a href="path_to_image" target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(3, 3)}}>
                                 <img src={require("../../../images/4_LabaRugi Detail_001.png")} alt="Highlight Laporan Keuangan"/>
                                 <div className="buttons-open-img-sectionTwoLK">
                                     <a>
@@ -124,7 +124,7 @@ function SectionTwooLK() {
                             <p>Kinerja keuangan bisnis Anda dengan detail pendapatan, biaya, dan laba bersih dalam satu tampilan yang ringkas.</p>
                         </div>
                         <div className="content-img-sectionTwooLK">
-                            <a href="path_to_image" target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(2, 2)}}>
+                            <a href="path_to_image" target="_blank" onClick={(e) => {e.preventDefault(); handleImageClick(4, 4)}}>
                                 <img src={require("../../../images/5. Laba Rugi Bulanan_001.png")} alt="Highlight Laporan Keuangan"/>
                                 <div className="buttons-open-img-sectionTwoLK">
                                     <a>
