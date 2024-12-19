@@ -9,11 +9,11 @@
 .navbar-scrolled {
   font-family: Arial, sans-serif;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   color: white;
   background-color: #ffffff;
   width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 5px rgba(169, 169, 169, 1);
   padding: 10px 0;
 }
 
@@ -1971,7 +1971,8 @@ footer {
   background-color: #f0f4f7;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1.5px 3px 5px rgba(169, 169, 169, 0.8);
+  z-index: 1000;
   width: 100%;
   margin-bottom: 1.5rem;
 }
@@ -1992,7 +1993,6 @@ footer {
 
 .content-sectionTwooLK p {
   font-size: 1.2rem;
-  margin-right: 3rem;
 }
 
 .content-img-sectionTwooLK {
@@ -2041,7 +2041,8 @@ footer {
 }
 
 .container-box-sectionEndFill {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1.5px 3px 5px rgba(169, 169, 169, 0.8);
+  z-index: 100;
   background-color: #f0f4f7;
   border-radius: 8px;
   width: 45%;
@@ -2471,6 +2472,7 @@ footer {
   border-radius: 15px;
   width: 60%;
   margin-bottom: 20px;
+  box-shadow: 0 0px 4px rgba(169, 169, 169, 0.5);
 }
 
 .container-box-sectionThreeLP img {
@@ -2532,16 +2534,19 @@ footer {
 }
 
 .container-box-sectionFiveLP {
-  border: 1px solid #1c5d99;
-  border-radius: 10px;
-  padding: 4rem 4rem 1rem 4rem;
+  background-color: white;
+  border-radius: 15px;
   margin-top: 2rem;
+  z-index: 1000;
+  box-shadow: 0 0px 8px rgba(169, 169, 169, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
-.container-box-sectionFiveLP img {
+.content-comment-lp img {
   width: 100px;
-  height: auto;
-  border-radius: 50%;
+  height: 75px;
   margin-bottom: 2rem;
 }
 
@@ -2623,3 +2628,16 @@ footer {
   }
 
 }
+
+@media (max-width: 500px) {
+  .container-box-sectionFiveLP {
+    padding: 2rem 0.5rem;
+  }
+
+  .svg-icon {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
