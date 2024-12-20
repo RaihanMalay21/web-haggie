@@ -15,12 +15,12 @@ function SectionFiveLP() {
         {
           image: img2, 
           comment: "“Sangat membantu UMKM seperti saya dalam pengelolaan pajak dan keuangan.”",
-          name: "Collection"
+          name: "Mirage Collection"
         },
         {
           image: img3, 
           comment: "“Proses keuangan jadi lebih mudah, cepat, dan aman dengan Finfast.”",
-          name: "Mandi Shop"
+          name: "maudi shop"
         }
       ];
 
