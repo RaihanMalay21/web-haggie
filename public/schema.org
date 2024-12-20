@@ -1,0 +1,7 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://finfast.id",
+  "name": "Finfast",
+  "logo": "https://finfast.id/logo"
+}

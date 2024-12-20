@@ -10,6 +10,7 @@ import LayananPajak from "./Components/LayananPajak";
 import ScrollToTop from "./Components/helper/scrollToTop";
 import DefaultWhatshapp from "./Components/pageWhatshapp";
 import { PageLayananAudit } from "./Components/LayananAudit/page";
+import LogoWeb from "./Components/logo";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path='/produk/laporan/keuangan' element={<LaporanKeuangan/>}/>
                 <Route path='/produk/layanan/pajak' element={<LayananPajak/>}/>
                 <Route path='/produk/layanan/audit' element={<PageLayananAudit/>} />
+                <Route path="/logo" element={<LogoWeb/>}/>
             </Routes>
             <DefaultWhatshapp/>
         </div>
