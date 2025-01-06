@@ -1031,6 +1031,11 @@ footer {
   margin-bottom: 10px;
 }
 
+.image-footer-social-media {
+  height: 35px;
+  width: 35px;
+}
+
 @media (max-width: 1000px) {
   .footer {
     width: 100%;
